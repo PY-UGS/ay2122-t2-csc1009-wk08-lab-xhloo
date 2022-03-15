@@ -28,7 +28,7 @@ public class CheckingAccount
         {
 			throw new InsufficientFundsException(amount - balance);
 		}
-		if (amount < 0)
+		if (amount <= 0)
 		{
 			throw new IllegalArgumentException("The withdrawal amount is invalid");
 		}
