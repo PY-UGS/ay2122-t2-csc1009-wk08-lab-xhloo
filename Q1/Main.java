@@ -5,7 +5,7 @@ public class Main
     public static void main(String[] args) 
     {
 		try (Scanner sc = new Scanner(System.in))
-        {
+        	{
 			CircleWithException circle = new CircleWithException();
 			System.out.print("Radius of the circle: ");
 			double radius = sc.nextDouble();
@@ -14,12 +14,12 @@ public class Main
 			System.out.println("The area of the circle is " + circle.getArea());
 			System.out.println("The diameter of the circle is " + circle.getDiameter());
 		}
-        catch(IllegalArgumentException e)
-        {
+        	catch(IllegalArgumentException e)
+        	{
 			System.out.println(e.getMessage());
 		}
-        catch(Exception e)
-        {
+        	catch(Exception e)
+        	{
 			System.out.println(e.getMessage());
 		}
 	}  
