@@ -1,5 +1,5 @@
 public class CheckingAccount 
- {
+{
     private double balance;
 	private String accountNumber;
 	
